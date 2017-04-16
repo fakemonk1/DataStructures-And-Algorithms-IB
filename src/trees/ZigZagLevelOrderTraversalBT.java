@@ -2,6 +2,27 @@ package trees;
 
 import java.util.ArrayList;
 
+/**
+ * Given a binary tree, return the zigzag level order traversal of its nodes’ values.
+ * (ie, from left to right, then right to left for the next level and alternate between).
+ * <p>
+ * Example :
+ * Given binary tree
+ * <p>
+ * 3
+ * / \
+ * 9  20
+ * /  \
+ * 15   7
+ * return
+ * <p>
+ * [
+ * [3],
+ * [20, 9],
+ * [15, 7]
+ * ]
+ */
+
 public class ZigZagLevelOrderTraversalBT {
 
     public ArrayList<ArrayList<Integer>> zigzagLevelOrder(TreeNode root) {
@@ -20,7 +41,7 @@ public class ZigZagLevelOrderTraversalBT {
                 if (node.right != null)
                     children.add(node.right);
             }
-            order = 1- order;
+            order = 1 - order;
             solution.add(getList(current, order));
             current = children;
         }
