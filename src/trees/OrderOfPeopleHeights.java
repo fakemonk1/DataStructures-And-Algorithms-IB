@@ -36,9 +36,11 @@ public class OrderOfPeopleHeights {
             map.put(heights.get(i), infronts.get(i));
         }
 
+        //sort the height array
         ArrayList<Integer> sortedHeight = new ArrayList<>(heights);
         Collections.sort(sortedHeight);
 
+        //start placing the people in the queue starting from the smallest height
         for (int i = 0; i < sortedHeight.size(); i++) {
             int height = sortedHeight.get(i);
             int infront = map.get(height);

@@ -29,6 +29,9 @@ public class InorderTraversal {
         return solution;
     }
 
+    /**
+     * Recursive way
+     */
     void inOrderTraversal2(TreeNode node) {
         if (node == null) {
             return;

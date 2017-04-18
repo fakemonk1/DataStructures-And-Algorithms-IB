@@ -1,6 +1,6 @@
 package trees;
 
-import ds.tree.TreeNode;import java.util.Stack;
+import java.util.Stack;
 
 /**
  * Given a binary tree, flatten it to a linked list in-place.
@@ -8,10 +8,10 @@ import ds.tree.TreeNode;import java.util.Stack;
  * Given
  * <p>
  * <p>
- * 1
- * / \
- * 2   5
- * / \   \
+ *     1
+ *    / \
+ *   2   5
+ *  / \   \
  * 3   4   6
  * The flattened tree should look like:
  * <p>
@@ -27,6 +27,8 @@ import ds.tree.TreeNode;import java.util.Stack;
  * \
  * 6
  * Note that the left child of all nodes should be NULL.
+ *
+ * Solution: Do the PreOrder Traversal using stack'''''
  */
 public class FlattenBinaryTreeToLinkedList {
     public TreeNode flatten(TreeNode root) {
