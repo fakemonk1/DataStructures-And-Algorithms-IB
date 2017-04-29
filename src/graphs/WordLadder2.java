@@ -1,8 +1,11 @@
-package ds.graphs;
+package graphs;
 
 import java.util.*;
 
 /**
+ *
+ * https://www.interviewbit.com/problems/word-ladder-ii/
+ *
  * Given two words (start and end), and a dictionary, find the shortest transformation sequence from start to end, such that:
 
  Only one letter can be changed at a time
@@ -43,7 +46,7 @@ public class WordLadder2 {
         d.add(startWord);
         QueueEntry entry = new QueueEntry(startWord, d);
         queue.add(entry);
-        QueueEntry polled = entry;
+        QueueEntry polled;
         while (!queue.isEmpty()) {
             polled = queue.poll();
             if (isadjacent(polled.word, endWord)) {
