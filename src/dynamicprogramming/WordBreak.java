@@ -16,11 +16,12 @@ import java.util.*;
 
 public class WordBreak {
 
-    public int wordBreak(String s, ArrayList<String> B) {
+    // O(string length * dict size). if the size of the dictionary is very large, the time is bad
+    public int wordBreak1(String s, ArrayList<String> B) {
         boolean[] t = new boolean[s.length()+1];
-        t[0] = true;
+        t[0] = true;   //Because we need initial state
 
-        //Because we need initial state
+
         Set<String> dict = new HashSet<>(B);
 
         for(int i=0; i<s.length(); i++){
@@ -44,12 +45,36 @@ public class WordBreak {
 
         return t[s.length()]?1:0;
     }
+
+    //O(n^2) time (n is the length of the string)
+    public boolean wordBreak2(String s, List<String> wordDict) {
+        int[] pos = new int[s.length()+1];
+
+        Arrays.fill(pos, -1);
+
+        pos[0]=0;
+
+        for(int i=0; i<s.length(); i++){
+            if(pos[i]!=-1){
+                for(int j=i+1; j<=s.length(); j++){
+                    String sub = s.substring(i, j);
+                    System.out.println("testing for:  " + sub);
+                    if(wordDict.contains(sub)){
+                        pos[j]=i;
+                    }
+                }
+            }
+        }
+
+        return pos[s.length()]!=-1;
+    }
+
     public static void main(String[] args) {
 
         WordBreak mWordBreak = new WordBreak();
-        String str = "ashishgupta";
-        ArrayList<String> list = new ArrayList<>(Arrays.asList( "ashish", "gupta", "water", "sun"));
-        System.out.println(mWordBreak.wordBreak(str, list));
+        String str = "iamace";
+        ArrayList<String> list = new ArrayList<>(Arrays.asList( "i", "am", "a", "ace"));
+        System.out.println(mWordBreak.wordBreak2(str, list));
     }
 
 }
