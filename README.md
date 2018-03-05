@@ -1,8 +1,6 @@
-# InterviewBit
-These are my InterviewBit Solutions for DataStructures And Algorithms
+# DataStructures And Algorithms
 
-> Please feel free to send the pull request if you see something is wrong 
-> or if anything can be optimized further
+> These are my InterviewBit Solutions for DataStructures And Algorithms .Please feel free to send the pull request(s) if you see something is wrong or if anything can be optimized further
 
 | Topics |
 | ------
@@ -23,7 +21,6 @@ These are my InterviewBit Solutions for DataStructures And Algorithms
 | [graphs] |
 
    [arrays]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/arrays>
-   [math]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/math>
    [Binary Search]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/binarysearch>
    [strings]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/strings>
    [bit manipulation]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/bitmanipulation>
@@ -32,6 +29,7 @@ These are my InterviewBit Solutions for DataStructures And Algorithms
    [stacks and queues]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/stacksandqueues>
    [backtracking]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/backtracking>
    [hashing]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/hashing>
+   [math]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/math>
    [heaps and maps]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/heapsandmaps>
    [greedy]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/greedy>
    [trees]: <https://github.com/fakemonk1/InterviewBit/tree/master/src/trees>
