@@ -1,5 +1,5 @@
 # InterviewBit
-These are my InterviewBit Solutions
+These are my InterviewBit Solutions for DataStructures And Algorithms
 
 > Please feel free to send the pull request if you see something is wrong 
 > or if anything can be optimized further
